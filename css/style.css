@@ -115,19 +115,20 @@ html[xmlns] .slides{display:block}
 
 
 /* Icon */
-.icon-menu{float:right;margin-left:10px;width:41px;height:41px;background:url(../imgs/icon-menu.png) no-repeat left top}
-.icon-close{float:right;margin-left:10px;width:41px;height:41px;background:url(../imgs/icon-close.png) no-repeat left top}
+.icon-menu{float:right;margin-left:10px;width:42px;height:42px;background:url(../imgs/icon-menu.png) no-repeat left top}
+.icon-close{float:right;margin-left:10px;width:42px;height:42px;background:url(../imgs/icon-close.png) no-repeat left top}
 
 
 /*************************************/
-body{width:640px;margin:0 auto;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;background-size:cover;-webkit-user-select:none;-moz-user-select:none;overflow-x:hidden}
+html{overflow:hidden;overflow-y:auto}
+body{width:640px;margin:0 auto;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;background-size:cover;-webkit-user-select:none;-moz-user-select:none;overflow:hidden;overflow-y:auto}
 
 #wrap{position:relative}
 
 /* Header */
 header{position:absolute;z-index:10;left:0;top:0;height:120px;width:100%;background-color:rgba(213,221,228,.8);border-bottom:1px solid rgba(0,0,0,.1)}
 header .logo{float:left;margin:30px 0 0 40px}
-header .btnMenu, header .btnClose{float:right;font-size:30px;color:#517191;padding:39px 40px;height:42px;line-height:42px}
+header .btnMenu, header .btnClose{float:right;display:block;font-size:30px;color:#517191;padding:39px 40px 0;box-sizing:border-box;height:120px;height:44px}
 header .btnClose{display:none}
 
 /* Navi */
@@ -135,7 +136,7 @@ header .btnClose{display:none}
 #navi li.logo{background-color:#d4dce3;height:52px;padding:35px 0}
 #navi li.logo img{float:right;margin-right:40px}
 #navi li a{color:#aab9c9;font-weight:bold;display:block;text-align:right;height:90px;line-height:90px;box-sizing:border-box;padding-right:40px;font-size:30px}
-#navi li a:hover{background-color:#3d4f60;color:#fff}
+#navi li.act a, #navi li a:hover{background-color:#3d4f60;color:#fff}
 
 
 
