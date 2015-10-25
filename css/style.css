@@ -5,7 +5,7 @@ audio:not([controls]){display:none;height:0}
 [hidden]{display:none}
 html{font-size:20px;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;-webkit-tap-highlight-color: rgba(0, 0, 0, 0)}
 html,button,input,select,textarea{font-family:Arial, Microsoft Yahei, "微软雅黑", sans-serif;color:#434343}
-body{margin:0;background-color:#e4e4e4}
+body{margin:0;background-color:#eff2f5}
 a{color:#363636;font-weight:lighter;outline:none !important}
 /*a:hover{color:#e20821}*/
 a:link{text-decoration:none}
@@ -117,6 +117,8 @@ html[xmlns] .slides{display:block}
 /* Icon */
 .icon-menu{float:right;margin-left:10px;width:42px;height:42px;background:url(../imgs/icon-menu.png) no-repeat left top}
 .icon-close{float:right;margin-left:10px;width:42px;height:42px;background:url(../imgs/icon-close.png) no-repeat left top}
+.icon-douban{display:inline-block;margin-right:20px;width:32px;height:31px;vertical-align:middle;background:url(../imgs/icon-douban.png) no-repeat left top}
+.icon-sina{display:inline-block;margin-right:40px;width:43px;height:35px;vertical-align:middle;background:url(../imgs/icon-sina.png) no-repeat left top}
 
 
 /*************************************/
@@ -138,8 +140,10 @@ header .btnClose{display:none}
 #navi li a{color:#aab9c9;font-weight:bold;display:block;text-align:right;height:90px;line-height:90px;box-sizing:border-box;padding-right:40px;font-size:30px}
 #navi li.act a, #navi li a:hover{background-color:#3d4f60;color:#fff}
 
-
-
+/* Footer */
+footer{padding:10px 0;font-size:18px;line-height:26px;background-color:#d6dde3;color:#fff;text-align:center}
+footer a{color:#fff}
+footer strong{font-weight:lighter;display:block}
 
 
 /* Main */
@@ -148,16 +152,75 @@ header .btnClose{display:none}
 /* hpFocus */
 .hpFocus{}
 
+/* hpLink */
+.hpLink{position:absolute;left:0;top:140px;width:100%;text-align:right}
+
 /* hpMenu */
 .hpMenu li{border-top:1px solid #e2ebef;background-color:#f9fbfc}
 .hpMenu li a{display:block;color:#6f8ba5;font-weight:bold;height:130px;line-height:130px;font-size:36px;text-align:center}
 
+/* Content */
+.content{position:relative;padding:80px 0 20px}
+.content h2{position:absolute;left:42px;top:-50px;box-sizing:border-box;color:#6f8ba5;margin:0;font-size:36px;height:100px;width:556px;background-color:#fff;text-align:center;line-height:100px;padding-left:20px;letter-spacing:20px}
+.content .items{padding:20px 0;color:#395e82;border-bottom:1px solid #dae1e8}
+.content .items h3{margin:0 42px;text-align:center;line-height:42px;font-size:32px}
+.content .items .intro{margin:24px 42px;line-height:34px;font-size:25px;text-align:center}
+.content .items .cont p{margin:0 42px 24px;line-height:34px;font-size:25px}
+.content .items .img img{display:block;max-width:100%;height:auto}
 
+/* miniVote */
+.miniVote{margin:0 42px;padding:20px 0}
+.miniVote strong{display:block;line-height:34px;margin-bottom:20px;font-size:25px;color:#5f7995}
+.miniVote li{margin-bottom:8px}
+.miniVote li .tit button{width:360px;height:42px;line-height:42px;background-color:#fff;box-sizing:border-box;color:#5f7995;font-size:24px;text-align:left;padding-left:20px}
+.miniVote li .result{display:none;width:480px;position:relative;height:42px}
+.miniVote li .result span{position:absolute;left:0;width:0%;top:0;height:42px;background-color:#fff}
+.miniVote li .result span em{position:absolute;left:100%;top:0;height:42px;line-height:42px;color:#5f7995;padding-left:20px;font-size:25px}
+.miniVote li.agree .result span{background-color:#627085}
 
+/* voteBox */
+.voteBox{position:relative;padding:100px 0 20px}
+.voteBox strong{position:absolute;left:0;top:-60px;box-sizing:border-box;color:#6f8ba5;margin:0;font-size:36px;height:130px;width:556px;background-color:#fff;text-align:center;line-height:50px;padding-left:20px;padding-top:15px;letter-spacing:10px}
+.voteBox li{margin-bottom:16px}
+.voteBox li .tit button{height:64px;line-height:64px;font-size:32px}
+.voteBox li .result,
+.voteBox li .result span,
+.voteBox li .result span em{height:64px;line-height:64px;font-size:32px}
 
+/* wxCode */
+.wxCode{padding:40px 0}
+.wxCode strong{display:block;font-size:28px;color:#5f7995;text-align:center;line-height:42px;margin-bottom:10px}
+.wxCode p{width:180px;height:180px;background-color:#fff;padding:12px;margin:0 auto}
 
+/* kolItems */
+.kolItems{padding:40px 0 !important}
+.kolItems .user{margin:0 42px 40px}
+.kolItems .user .photo{float:left;width:214px}
+.kolItems .user .info{float:right;width:310px;text-align:right}
+.kolItems .user .info strong{display:block;width:280px;float:right;font-size:24px;line-height:36px;height:36px;padding-bottom:20px;border-bottom:1px solid #dae1e8;margin-bottom:16px}
+.kolItems .user .info p{clear:both;line-height:44px;font-size:24px;}
+.kolItems .cont p{margin-bottom:0 !important}
 
+/* itwItems */
+.itwItems{padding:16px 0}
+.itwItems .video{margin-bottom:16px}
+.itwItems strong{display:block;margin:0 42px;color:#395e82;line-height:32px;font-size:22px}
+.itwItems p{margin:0 42px;font-size:18px;color:#395e82}
 
+/* repBox */
+.repBox .tip{margin:0 42px;font-size:28px;line-height:42px;color:#395e82;text-align:center}
+.repBox ul{margin:20px 42px;background:#fff;padding:20px 26px}
+.repBox li{margin-bottom:20px}
+.repBox li.tit{color:#395e82;font-size:28px;letter-spacing:8px}
+.repBox li input{width:100%;box-sizing:border-box;color:#395e82;padding:0 20px;height:64px;line-height:64px;background-color:#e3e7ed;letter-spacing:8px;outline:none;border-radius:0;-webkit-appearance:none}
+.repBox li input[placeholder]{color:rgba(57,94,130,.5) !important}
+.repBox li ::-webkit-input-placeholder{color:rgba(57,94,130,.5) !important}
+.repBox li :-moz-placeholder{color:rgba(57,94,130,.5)}
+.repBox li ::-moz-placeholder{color:rgba(57,94,130,.5)}
+.repBox li :-ms-input-placeholder{color:rgba(57,94,130,.5)}
+.repBox li textarea{width:100%;box-sizing:border-box;color:#395e82;padding:12px 20px;height:316px;line-height:42px;background-color:#e3e7ed;letter-spacing:8px;resize:none;outline:none;border-radius:0;-webkit-appearance:none}
+.repBox li button{height:64px;width:100%;color:#395e82;background-color:#e3e7ed;font-size:26px;font-weight:bold}
+.repBox li.back{display:none;text-align:center;color:#f11717;font-size:18px;line-height:28px}
 
 
 

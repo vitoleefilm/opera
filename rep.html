@@ -35,7 +35,7 @@
 	</ul>
 	
 	<header>
-		<a class="logo" href="#" title="Orpea"><img src="imgs/logo.png" alt=""></a>
+		<a class="logo" href="index.html" title="Orpea"><img src="imgs/logo.png" alt=""></a>
 		<span class="btnMenu" onClick="$('#wrap').animate({left:-500},500);$(this).hide();$('.btnClose').show();">导 航<i class="icon-menu"></i></span>
 		<span class="btnClose" onClick="$('#wrap').animate({left:0},500);$(this).hide();$('.btnMenu').show();"><i class="icon-close"></i></span>
 	</header>
@@ -48,14 +48,30 @@
 			<a href="#" title="新浪"><i class="icon-sina"></i></a>
 		</section>
 		
-		<ul class="hpMenu">
-			<li><a href="press.html" title="新闻观点">新 闻 观 点</a></li>
-			<li><a href="kol.html" title="独家观点">独 家 观 点</a></li>
-			<li><a href="invite.html" title="欧葆庭诚邀">欧 葆 庭 诚 邀</a></li>
-			<li><a href="itw.html" title="群众意见">群 众 意 见</a></li>
-			<li><a href="rep.html" title="预约参观">预 约 参 观</a></li>
-		</ul>
-	
+		<section class="content">
+			<h2>预约参观</h2>
+			
+			<section class="repBox">
+				<p class="tip">欧葆庭南京仙林高级养老会所将于11月19号正式开业，我们诚挚邀请您和父母前来体验先进舒适的国际标准养老会所。请点击“预约参观”，完成相关信息，即有机会获取一日免费体验。</p>
+				<form id="repForm">
+				<ul>
+					<li class="tit">预约参观</li>
+					<li><input type="text" placeholder="请输入您的真实姓名"></li>
+					<li><input type="text" placeholder="请输入您的电话"></li>
+					<li><input type="text" placeholder="请输入您的电子邮件"></li>
+					<li><textarea placeholder="请输入您的留言信息"></textarea></li>
+					<li><button type="submit">发 送</button></li>
+					<li class="back">提交成功！<br>如果您入选，我们会在48小时内与您电话确认。</li>
+				</ul>
+				</form>
+			</section>
+			
+		</section>
+		
+		<footer>
+			<strong>使用条款</strong>
+			<p>2015 欧葆庭 拥有解释权&emsp;｜&emsp;沪ICP备15014397号-2</p>
+		</footer>
 	</section>
 
 </section>
