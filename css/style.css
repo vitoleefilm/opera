@@ -222,7 +222,11 @@ footer strong{font-weight:lighter;display:block}
 .repBox li button{height:64px;width:100%;color:#395e82;background-color:#e3e7ed;font-size:26px;font-weight:bold}
 .repBox li.back{display:none;text-align:center;color:#f11717;font-size:18px;line-height:28px}
 
-
+/* iPhone4 Weixin */
+@media only screen and (max-height:832px) and (min-height:700px){
+/* hpFocus */
+.hpFocus{height:300px;overflow:hidden}
+}
 
 
 
