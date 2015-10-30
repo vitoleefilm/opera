@@ -169,7 +169,7 @@ footer strong{font-weight:lighter;display:block}
 .content .items .img img{display:block;max-width:100%;height:auto}
 
 /* miniVote */
-.miniVote{margin:0 42px;padding:20px 0}
+.miniVote{margin:0 42px;padding:20px 0;}
 .miniVote strong{display:block;line-height:34px;margin-bottom:20px;font-size:25px;color:#5f7995}
 .miniVote li{margin-bottom:8px}
 .miniVote li .tit button{width:360px;height:42px;line-height:42px;background-color:#fff;box-sizing:border-box;color:#5f7995;font-size:24px;text-align:left;padding-left:20px}
@@ -188,9 +188,9 @@ footer strong{font-weight:lighter;display:block}
 .voteBox li .result span em{height:64px;line-height:64px;font-size:32px}
 
 /* wxCode */
-.wxCode{padding:40px 0}
+.wxCode{position:relative;margin:40px 0}
 .wxCode strong{display:block;font-size:28px;color:#5f7995;text-align:center;line-height:42px;margin-bottom:10px}
-.wxCode p{width:180px;height:180px;background-color:#fff;padding:12px;margin:0 auto}
+.wxCode img{display:inline;padding-bottom:100px}
 
 /* kolItems */
 .kolItems{padding:40px 0 !important}
@@ -221,6 +221,14 @@ footer strong{font-weight:lighter;display:block}
 .repBox li textarea{width:100%;box-sizing:border-box;color:#395e82;padding:12px 20px;height:316px;line-height:42px;background-color:#e3e7ed;letter-spacing:8px;resize:none;outline:none;border-radius:0;-webkit-appearance:none}
 .repBox li button{height:64px;width:100%;color:#395e82;background-color:#e3e7ed;font-size:26px;font-weight:bold}
 .repBox li.back{display:none;text-align:center;color:#f11717;font-size:18px;line-height:28px}
+
+/* Rule */
+#rule{display:none}
+#rule header{position:static}
+#rule header .btnClose{display:block}
+#rule .content{padding:40px 0}
+#rule .content h2{position:static;margin:0 auto 30px}
+#rule .content .cont p{font-size:26px;line-height:42px;color:#395e82;margin:0 42px 20px;word-break:break-all;word-wrap:break-word}
 
 /* iPhone4 Weixin */
 @media only screen and (max-height:832px) and (min-height:700px){
