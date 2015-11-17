@@ -1,14 +1,6 @@
 $(function(){
 	
-	if($('.hpMenu').size() > 0){
-		$('.hpMenu').each(function(index, element) {
-			var h = ($(window).height() - $(this).position().top) / 5 - 1;
-			$('li a', this).each(function(index, element) {
-				$(this).height(h)
-				$(this).css('line-height', h + 'px');
-			});
-		});
-	};
+	$(window).trigger('resize');
 	
 	$('.btnVote').click(function(){
 		
@@ -32,4 +24,34 @@ $(function(){
 		$('#rule').show();
 		$(window).scrollTop(0);
 	});
+	
+	$('.more').on('click','button',function(){
+		
+		$(this).hasClass('open')?(
+			$(this).text('展开'),
+			$(this).removeClass('open'),
+			$(this).parent().siblings('.cont').children('p').hide()
+		):(
+			$(this).text('收起'),
+			$(this).addClass('open'),
+			$(this).parent().siblings('.cont').children('p').show()
+		)
+	
+	});
+	
 });
+
+$(window).load(function(){
+	$(window).trigger('resize');
+}).resize(function(){
+
+	if($('.hpMenu').size() > 0){
+		$('.hpMenu').each(function(index, element) {
+			var h = ($(window).height() - $(this).position().top) / 5 - 1;
+			$('li a', this).each(function(index, element) {
+				$(this).height(h)
+				$(this).css('line-height', h + 'px');
+			});
+		});
+	};
+})
