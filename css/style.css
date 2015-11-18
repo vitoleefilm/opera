@@ -165,12 +165,12 @@ footer strong{font-weight:lighter;display:block}
 .content .items{padding:20px 0;color:#395e82;border-bottom:1px solid #dae1e8}
 .content .items h3{margin:0 42px;text-align:center;line-height:42px;font-size:32px}
 .content .items .intro{margin:24px 42px;line-height:34px;font-size:25px;text-align:center}
-.content .items .cont{}
-.content .items .cont p{display:none;margin:0 42px 24px;line-height:34px;font-size:25px}
+.content .items .cont p{margin:0 42px 24px;line-height:34px;font-size:25px}
 .content .items .img{margin-bottom:20px}
 .content .items .img img{display:block;max-width:100%;height:auto}
 .content .more{text-align:center;margin-top:20px}
 .content .more button{box-sizing:border-box;color:#6f8ba5;margin:0;font-size:25px;height:42px;width:200px;background-color:#fff;text-align:center;line-height:42px;padding-left:20px;letter-spacing:20px}
+.pressBox .items .cont p{display:none}
 
 /* miniVote */
 .miniVote{margin:0 42px;padding:20px 0}
@@ -243,6 +243,11 @@ footer strong{font-weight:lighter;display:block}
 /* hpFocus */
 .hpFocus{height:300px;overflow:hidden}
 }
+
+
+/* 2015-11-08 */
+footer{position:relative}
+footer .backTop{position:absolute;right:40px;top:-80px}
 
 
 

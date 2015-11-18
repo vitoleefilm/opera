@@ -39,6 +39,10 @@ $(function(){
 	
 	});
 	
+	/* 2015-11-08 */
+	$('.backTop').click(function(){
+		$('body').scrollTop(0);
+	});
 });
 
 $(window).load(function(){
