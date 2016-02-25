@@ -47,11 +47,19 @@ $(function(){
 
 $(window).load(function(){
 	$(window).trigger('resize');
+	
+	if($('.hpFocus').size() > 0){
+		$('.hpFocus').flexslider({
+			animation: "slide",
+			directionNav : false
+		});
+	}
+	
 }).resize(function(){
 
 	if($('.hpMenu').size() > 0){
 		$('.hpMenu').each(function(index, element) {
-			var h = ($(window).height() - $(this).position().top) / 5 - 1;
+			var h = ($(window).height() - $(this).position().top) / 4 - 1;
 			$('li a', this).each(function(index, element) {
 				$(this).height(h)
 				$(this).css('line-height', h + 'px');
