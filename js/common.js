@@ -1,7 +1,5 @@
 $(function(){
 	
-	$(window).trigger('resize');
-	
 	$('.btnVote').click(function(){
 		
 		$('.btnVote').each(function(index, element) {
@@ -15,8 +13,16 @@ $(function(){
 	
 	$('#repForm').submit(function(){
 		$('.back',this).show();
+		
+		setTimeout(function(){
+			$('#popShare').fadeIn();
+		}, 2000);
 		return false;
 	});
+	
+	$('#popShare').click(function(){
+		$(this).fadeOut();
+	})
 
 	$('footer').on('click', 'strong a', function(e){
 		e.preventDefault();
@@ -48,22 +54,11 @@ $(function(){
 $(window).load(function(){
 	$(window).trigger('resize');
 	
-	if($('.hpFocus').size() > 0){
+	if($('.hpFocus.flexslider').size() > 0){
 		$('.hpFocus').flexslider({
 			animation: "slide",
 			directionNav : false
 		});
 	}
 	
-}).resize(function(){
-
-	if($('.hpMenu').size() > 0){
-		$('.hpMenu').each(function(index, element) {
-			var h = ($(window).height() - $(this).position().top) / 4 - 1;
-			$('li a', this).each(function(index, element) {
-				$(this).height(h)
-				$(this).css('line-height', h + 'px');
-			});
-		});
-	};
-})
+});

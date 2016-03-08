@@ -154,7 +154,7 @@ footer strong{font-weight:lighter;display:block}
 
 /* Content */
 .content{position:relative;padding:80px 0 20px}
-.content h2{position:absolute;left:42px;top:-50px;box-sizing:border-box;color:#6f8ba5;margin:0;font-size:36px;height:100px;width:556px;background-color:#fff;text-align:center;line-height:100px;padding-left:20px;letter-spacing:20px}
+.content h2{position:absolute;left:42px;top:-50px;box-sizing:border-box;color:#395e82;margin:0;font-size:36px;height:100px;width:556px;background-color:#fff;text-align:center;line-height:100px;padding-left:20px;letter-spacing:20px}
 .content .items{padding:20px 0;color:#395e82;border-bottom:1px solid #dae1e8}
 .content .items h3{margin:0 42px;text-align:center;line-height:42px;font-size:32px}
 .content .items .intro{margin:24px 42px;line-height:34px;font-size:25px;text-align:center}
@@ -197,6 +197,13 @@ footer strong{font-weight:lighter;display:block}
 .kolItems .user .info p{clear:both;line-height:44px;font-size:24px;}
 .kolItems .cont p{margin-bottom:0 !important}
 
+/* cultureBox */
+.cultureBox{background-color:#11579f}
+.cultureBox p{text-align:center;color:#fff;padding-bottom:80px;font-size:24px;line-height:36px}
+
+/* itwIntro */
+.itwIntro{padding:0 80px 10px;font-size:24px;line-height:34px;text-align:center}
+
 /* itwItems */
 .itwItems{padding:16px 0}
 .itwItems .video{margin-bottom:16px}
@@ -204,7 +211,7 @@ footer strong{font-weight:lighter;display:block}
 .itwItems p{margin:0 42px;font-size:18px;color:#395e82}
 
 /* repBox */
-.repBox .tip{margin:0 42px;font-size:28px;line-height:42px;color:#395e82;text-align:center}
+.repBox .tip{margin:0 42px;font-size:24px;line-height:36px;color:#395e82;text-align:center}
 .repBox ul{margin:20px 42px;background:#fff;padding:20px 26px}
 .repBox li{margin-bottom:20px}
 .repBox li.tit{color:#395e82;font-size:28px;letter-spacing:8px}
@@ -242,6 +249,9 @@ footer strong{font-weight:lighter;display:block}
 footer{position:relative}
 footer .backTop{position:absolute;right:40px;top:-80px}
 
-
+/* 2016-3-8 */
+/* popShare */
+#popShare{display:none;position:fixed;left:0;top:0;width:100%;height:100%;text-align:center;background-color:rgba(17,87,159,.9);z-index:99999}
+#popShare img{width:100%;max-width:640px;height:auto}
 
 
