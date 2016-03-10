@@ -202,7 +202,7 @@ footer strong{font-weight:lighter;display:block}
 .cultureBox p{text-align:center;color:#fff;padding-bottom:80px;font-size:24px;line-height:36px}
 
 /* itwIntro */
-.itwIntro{padding:0 80px 10px;font-size:24px;line-height:34px;text-align:center}
+.itwIntro{padding:80px 80px 26px;margin:-80px 0 -16px;font-size:24px;line-height:34px;text-align:center;background: -moz-linear-gradient(top, #eff2f5, #e0edf1);background: -webkit-gradient(linear, 0 0, 0 100%, from(#eff2f5), to(#e0edf1));}
 
 /* itwItems */
 .itwItems{padding:16px 0}
