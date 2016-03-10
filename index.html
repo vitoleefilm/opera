@@ -28,8 +28,8 @@
 
 	<ul id="navi">
 		<li class="logo"><img src="imgs/logo.png" alt=""></li>
-		<li class="act"><a href="index.html" title="品牌文化">品 牌 文 化</a></li>
-		<li><a href="index.html#itw" title="采访调查">采 访 调 查</a></li>
+		<li class="item act"><a href="#top" title="品牌文化">品 牌 文 化</a></li>
+		<li class="item"><a href="#itw" title="采访调查">采 访 调 查</a></li>
 		<li><a href="rep.html" title="诚邀体验">诚 邀 体 验</a></li>
 	</ul>
 	
@@ -55,7 +55,7 @@
 		</section>
 		
 		<section class="content cultureBox">
-			<p>我们知道<br>回忆中，你儿时蹒跚不稳的脚步，<br>也知道，她此时颤颤巍巍的步伐。<br>我们知道<br>回忆里，你儿时天真好奇的目光，<br>也知道，她年迈温柔深邃的眼神。<br>过去的美好回忆？现在的静谧时光？<br>我们都想为您和您的父母好好守护。<br><br>来自法国的养老护理专家<br>欧葆庭<br><a id="itw" name="itw"></a>时光守护家</p>
+			<p>我们知道<br>回忆中，你儿时蹒跚不稳的脚步，<br>也知道，她此时颤颤巍巍的步伐。<br>我们知道<br>回忆里，你儿时天真好奇的目光，<br>也知道，她年迈温柔深邃的眼神。<br>过去的美好回忆？现在的静谧时光？<br>我们都想为您和您的父母好好守护。<br><br>来自法国的养老护理专家<br>欧葆庭<br>时光守护家</p><a id="itw" name="itw">&nbsp;</a>
 		</section>
 		
 		<section class="content itwBox">
@@ -82,14 +82,14 @@
 		
 		<section class="bgBlue">
 			<section class="miniVote">
-				<strong>您是否考虑把父母送<br>进优秀的养老机构？</strong>
+				<strong>如果有一家优秀的养老机构<br>您是否愿意让父母在这儿颐养天年呢？</strong>
 				<ul>
 					<li class="agree">
-						<p class="tit"><button class="btnVote" type="submit" value="1">A. 可以考虑</button></p>
+						<p class="tit"><button class="btnVote" type="submit" value="1">A. 愿意</button></p>
 						<p class="result"><span><em>60%</em></span></p>
 					</li>
 					<li>
-						<p class="tit"><button class="btnVote" type="submit" value="0">B. 从不考虑</button></p>
+						<p class="tit"><button class="btnVote" type="submit" value="0">B. 不愿意</button></p>
 						<p class="result"><span><em>40%</em></span></p>
 					</li>
 				</ul>
@@ -136,5 +136,25 @@
 <script src="js/jquery-2.1.3.min.js"></script>
 <script src="js/jquery.flexslider.min.js"></script>
 <script src="js/common.js"></script>
+<script>
+$(function(){
+	if(window.location.hash=="#itw"){
+		$('li.item', '#navi').eq(1).addClass('act').siblings('.item').removeClass('act');
+	}
+	$('li.item a', '#navi').click(function(e){
+		e.preventDefault();
+		window.location.hash ='';
+		switch ($(this).attr('href')){
+			case '#top':
+			$('html,body').scrollTop(0);
+			break;
+			case '#itw':
+			$('html,body').scrollTop($('#itw').offset().top);
+			break;
+		};
+		$('.btnClose', 'header').trigger('click');
+	})
+});
+</script>
 </body>
 </html>

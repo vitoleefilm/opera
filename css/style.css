@@ -5,7 +5,7 @@ audio:not([controls]){display:none;height:0}
 [hidden]{display:none}
 html{font-size:20px;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;-webkit-tap-highlight-color: rgba(0, 0, 0, 0)}
 html,button,input,select,textarea{font-family:Arial, Microsoft Yahei, "微软雅黑", sans-serif;color:#434343}
-body{margin:0;background-color:#eff2f5}
+body{margin:0;background-color:#e4e4e4}
 a{color:#363636;font-weight:lighter;outline:none !important}
 /*a:hover{color:#e20821}*/
 a:link{text-decoration:none}
@@ -127,14 +127,14 @@ header .btnMenu, header .btnClose{float:right;display:block;font-size:30px;color
 header .btnClose{display:none}
 
 /* Navi */
-#navi{position:absolute;left:640px;top:0;width:500px;height:100%;background-color:#4c5e70;z-index:0}
+#navi{position:absolute;left:640px;top:0;width:500px;height:100%;background-color:#11579f;z-index:0}
 #navi li.logo{background-color:#d4dce3;height:52px;padding:35px 0}
 #navi li.logo img{float:right;margin-right:40px}
 #navi li a{color:#aab9c9;font-weight:bold;display:block;text-align:right;height:90px;line-height:90px;box-sizing:border-box;padding-right:40px;font-size:30px}
-#navi li.act a, #navi li a:hover{background-color:#3d4f60;color:#fff}
+#navi li.act a, #navi li a:hover{background-color:#094685;color:#fff}
 
 /* Footer */
-footer{padding:10px 0;font-size:18px;line-height:26px;background-color:#d6dde3;color:#fff;text-align:center}
+footer{padding:10px 0;font-size:18px;line-height:26px;background-color:#ccd3d9;color:#fff;text-align:center}
 footer a{color:#fff}
 footer strong{font-weight:lighter;display:block}
 
@@ -234,8 +234,8 @@ footer strong{font-weight:lighter;display:block}
 #rule .content .cont p{font-size:26px;line-height:42px;color:#395e82;margin:0 42px 20px;word-break:break-all;word-wrap:break-word}
 
 /* bgBlue */
-.bgBlue{padding:20px 0 1px;background: -moz-linear-gradient(top, #445f78, #a6aeb4);background: -webkit-gradient(linear, 0 0, 0 100%, from(#445f78), to(#a6aeb4));}
-.bgBlue .miniVote strong, .bgBlue .miniVote li .result span em, .bgBlue .wxCode strong{color:#fff}
+.bgBlue{padding:20px 0 1px;background: -moz-linear-gradient(top, #e4e4e4, #989ca1);background: -webkit-gradient(linear, 0 0, 0 100%, from(#e4e4e4), to(#989ca1));/*background: -moz-linear-gradient(top, #445f78, #a6aeb4);background: -webkit-gradient(linear, 0 0, 0 100%, from(#445f78), to(#a6aeb4));*/}
+.bgBlue .miniVote strong, .bgBlue .miniVote li .result span em, .bgBlue .wxCode strong{color:#5f7995}
 .bgBlue .miniVote li.agree .result span{background-color:#3d4f60}
 
 /* iPhone4 Weixin */
