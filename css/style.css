@@ -224,6 +224,11 @@ footer strong{font-weight:lighter;display:block}
 .repBox li textarea{width:100%;box-sizing:border-box;color:#395e82;padding:12px 20px;height:316px;line-height:42px;background-color:#e3e7ed;letter-spacing:8px;resize:none;outline:none;border-radius:0;-webkit-appearance:none}
 .repBox li button{height:64px;width:100%;color:#395e82;background-color:#e3e7ed;font-size:26px;font-weight:bold}
 .repBox li.back{display:none;text-align:center;color:#f11717;font-size:18px;line-height:28px}
+.repBox li .iptError[placeholder]{color:#f00 !important}
+.repBox li .iptError::-webkit-input-placeholder{color:#f00 !important}
+.repBox li .iptError:-moz-placeholder{color:#f00}
+.repBox li .iptError::-moz-placeholder{color:#f00}
+.repBox li .iptError:-ms-input-placeholder{color:#f00}
 
 /* Rule */
 #rule{display:none}
