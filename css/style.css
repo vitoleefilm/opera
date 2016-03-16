@@ -115,7 +115,7 @@ html[xmlns] .slides{display:block}
 
 
 /*************************************/
-body{width:640px;margin:0 auto;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;background-size:cover;-webkit-user-select:none;-moz-user-select:none}
+body{width:640px;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;background-size:cover;-webkit-user-select:none;-moz-user-select:none;overflow:hidden;overflow-y:auto}
 
 #wrap{position:relative}
 
@@ -263,8 +263,4 @@ footer .backTop{position:absolute;right:40px;top:-80px}
 #pcshow .box{position:absolute;left:50%;top:50%;text-align:center;color:#fff;-webkit-transform:translate(-50%,-50%);-moz-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);-o-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}
 #pcshow .box img{display:block;margin:0 auto}
 #pcshow .box p{font-size:28px;line-height:40px;margin-top:10px}
-
-@media only screen and (min-width:1024px){
-	#pcshow{display:block}
-}
 
