@@ -25,7 +25,17 @@ $(function(){
 	};
 	
 	if(!isMobile.any()){
-		$('#pcshow').show();
+		var pcshow = '\
+			<section id="pcshow">\
+				<section class="box">\
+					<img src="imgs/wxCode.png" alt="">\
+					<p>手机扫码浏览</p>\
+				</section>\
+			</section>\
+		';
+		$('#wrap').remove();
+		$('body').append(pcshow);
+		return false;
 	};
 	
 	$('.btnMenu').click(function(e){
