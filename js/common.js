@@ -118,5 +118,10 @@ $(window).load(function(){
 			directionNav : false
 		});
 	}
-	
+}).bind('orientationchange', function(e){
+	if (window.orientation == 0 || window.orientation == 180) {
+		$('.landscape').hide();
+	}else if (window.orientation == 90 || window.orientation == -90) {
+		$('.landscape').show();
+	}
 });

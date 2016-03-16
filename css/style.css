@@ -264,3 +264,5 @@ footer .backTop{position:absolute;right:40px;top:-80px}
 #pcshow .box img{display:block;margin:0 auto}
 #pcshow .box p{font-size:28px;line-height:40px;margin-top:10px}
 
+.landscape{display:none;position:fixed;left:0;top:0;width:100%;height:100%;background:#fff url(../imgs/landscape.jpg) no-repeat center 40%; background-size:150px;z-index:999999}
+.landscape p{position:absolute;left:0;top:50%;width:100%;margin-top:60px;line-height:40px;font-size:20px;color:#000;text-shadow:1px 1px #dfdfdf;text-align:center;letter-spacing:10px}
