@@ -32,11 +32,11 @@
 		<li class="item"><a href="#itw" title="采访调查">采 访 调 查</a></li>
 		<li><a href="rep.html" title="诚邀体验">诚 邀 体 验</a></li>
 	</ul>
-	
+		
 	<header>
 		<a class="logo" href="#" title="Orpea"><img src="imgs/logo.png" alt=""></a>
-		<span class="btnMenu" onClick="$('#wrap').animate({left:-500},500);$(this).hide();$('.btnClose').show();$('body').height($(window).height()).css('overflow','hidden')"><i class="icon-menu"></i></span>
-		<span class="btnClose" onClick="$('#wrap').animate({left:0},500);$(this).hide();$('.btnMenu').show();$('body').removeAttr('style')"><i class="icon-close"></i></span>
+		<span class="btnMenu"><i class="icon-menu"></i></span>
+		<span class="btnClose"><i class="icon-close"></i></span>
 	</header>
 
 	<section id="main">
@@ -156,7 +156,7 @@ $(function(){
 			$('html,body').scrollTop(0);
 			break;
 			case '#itw':
-			$('html,body').scrollTop($('#itw').offset().top);
+			$('html,body').scrollTop($('#itw').offset().top - 130);
 			break;
 		};
 		$('.btnClose', 'header').trigger('click');

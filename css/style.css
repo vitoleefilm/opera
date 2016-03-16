@@ -115,19 +115,18 @@ html[xmlns] .slides{display:block}
 
 
 /*************************************/
-html{overflow:hidden;overflow-y:auto}
-body{width:640px;margin:0 auto;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;background-size:cover;-webkit-user-select:none;-moz-user-select:none;overflow:hidden;overflow-y:auto}
+body{width:640px;margin:0 auto;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;background-size:cover;-webkit-user-select:none;-moz-user-select:none}
 
 #wrap{position:relative}
 
 /* Header */
-header{/*position:absolute;z-index:10;left:0;top:0;*/height:120px;width:100%;background-color:rgba(213,221,228,.8);border-bottom:1px solid rgba(0,0,0,.1)}
+header{position:fixed;z-index:10;left:0;top:0;height:120px;width:640px;background-color:rgba(213,221,228,.8);border-bottom:1px solid rgba(0,0,0,.1)}
 header .logo{float:left;margin:30px 0 0 40px}
 header .btnMenu, header .btnClose{float:right;display:block;font-size:30px;color:#517191;padding:39px 40px 0;box-sizing:border-box;height:120px;height:44px}
 header .btnClose{display:none}
 
 /* Navi */
-#navi{position:absolute;left:640px;top:0;width:500px;height:100%;background-color:#11579f;z-index:0}
+#navi{position:fixed;left:640px;top:0;width:500px;height:100%;background-color:#11579f;z-index:0}
 #navi li.logo{background-color:#d4dce3;height:52px;padding:35px 0}
 #navi li.logo img{float:right;margin-right:40px}
 #navi li a{color:#aab9c9;font-weight:bold;display:block;text-align:right;height:90px;line-height:90px;box-sizing:border-box;padding-right:40px;font-size:30px}
@@ -140,13 +139,13 @@ footer strong{font-weight:lighter;display:block}
 
 
 /* Main */
-#main{position:relative;z-index:0/*; box-shadow:0 0 50px rgba(0,0,0,.5)*/}
+#main{position:relative;z-index:0;padding-top:120px}
 
 /* hpFocus */
 .hpFocus{height:430px}
 
 /* hpLink */
-.hpLink{position:absolute;left:0;top:40px;width:100%;text-align:right}
+.hpLink{position:absolute;left:0;top:140px;width:100%;text-align:right}
 
 /* hpMenu */
 .hpMenu li{background-color:#f9fbfc}
